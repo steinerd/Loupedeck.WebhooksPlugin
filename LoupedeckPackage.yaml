@@ -1,0 +1,14 @@
+type: plugin4
+name: Webhooks
+displayName: Webhooks
+version: 1.0.0
+author: Steinerd.com
+copyright: Copyright (c) 2022 Anthony Steiner
+
+supportedDevices:
+  - LoupedeckCt
+  - LoupedeckLive
+
+pluginFileName: WebhooksPlugin.dll
+pluginFolderWin: ./bin/win/
+pluginFolderMac: ./bin/mac/
