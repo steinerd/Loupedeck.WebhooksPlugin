@@ -90,6 +90,7 @@
 
             foreach (var file in harFiles)
             {
+                if (file == null) continue; 
                 entries.AddRange(HarConvert.DeserializeFromFile(file).Log.Entries);
             }
 
