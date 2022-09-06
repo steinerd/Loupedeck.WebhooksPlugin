@@ -10,6 +10,11 @@
 
     public static class HarExtensions
     {
+        /// <summary>
+        /// Method extension for running a <see cref="HarSharp.Request"/>.
+        /// </summary>
+        /// <param name="request"><see cref="HarSharp.Request"/></param>
+        /// <returns>Task to be run, as a pseudo-delegate</returns>
         public static Task Run(this HarSharp.Request request)
         {
             return request.Method != HttpMethod.Get.Method
