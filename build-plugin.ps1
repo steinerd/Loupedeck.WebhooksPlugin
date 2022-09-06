@@ -10,8 +10,9 @@ $loupedeckYaml = "LoupedeckPackage.yaml"
 $cwd = Get-Location
 
 New-Item -Path "$buildPath" -Force -Name "bin" -ItemType "directory" > $null
+New-Item -Path "$buildPath" -Force -Name "metadata" -ItemType "directory" > $null
 
-Copy-Item $loupedeckYaml -Force -Destination $buildPath > $null
+Copy-Item "$loupedeckYaml" -Force -Destination "$buildPath\metadata\$loupedeckYaml" > $null
 Copy-Item "$dllPath\$dllName" -Force -Destination "$buildPath\bin\$dllName" > $null
 
 $compress = @{

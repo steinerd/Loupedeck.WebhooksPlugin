@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Style", "IDE0049:Use framework type", Justification = "<Pending>", Scope = "module")]
+[assembly: SuppressMessage("Style", "IDE0049:Use framework type", Justification = "This is a silly style-correction", Scope = "module")]
