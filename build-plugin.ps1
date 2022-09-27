@@ -1,10 +1,10 @@
 $version = "1.0.1"
 $project = "Webhooks"
 $dllName = "WebhooksPlugin.dll"
-$dllPath = "$($env:LOCALAPPDATA)\Loupedeck\Plugins\$project"
+$dllPath = "$($env:LOCALAPPDATA)/Loupedeck/Plugins/$project"
 $buildPath = ".builds"
 $outputFileName = "$project"
-$zipPath = "$buildPath\$outputFileName.zip"
+$zipPath = "$buildPath/$outputFileName.zip"
 $pluginName = "$outputFileName.lplug4"
 $loupedeckYaml = "LoupedeckPackage.yaml"
 $cwd = Get-Location
