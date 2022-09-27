@@ -3,8 +3,8 @@
 
 **Submitting a...**
 <!-- Please check ONE, or write-in additional option if options provided are not applicable -->
-[ ] Bug report
-[ ] Feature request
+- [ ] Bug report
+- [ ] Feature request
 
 **Current behavior:**
 <!-- Describe how the bug manifests. Leave blank if feature -->
