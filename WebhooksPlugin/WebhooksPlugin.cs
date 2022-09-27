@@ -11,7 +11,7 @@ namespace Loupedeck.WebhooksPlugin
         /// <summary>
         /// Default path to search for webhook .har files.
         /// </summary>
-        internal const string DEFAULT_PATH = @".loupedeck\webhooks";
+        internal static readonly string DEFAULT_PATH = Path.Combine(".loupedeck","webhooks");
 
         /// <summary>
         /// Gets thread-safe readonly User Profile path.
