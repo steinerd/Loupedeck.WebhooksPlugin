@@ -1,4 +1,4 @@
-$version = "1.0.2"
+$version = "1.0.9"
 $project = "Webhooks"
 $dllName = "WebhooksPlugin.dll"
 $dllPath = "$($env:LOCALAPPDATA)/Loupedeck/Plugins/$project"
