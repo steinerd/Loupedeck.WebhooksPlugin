@@ -17,6 +17,8 @@ New-Item -Path "$buildPath" -Force -Name "bin" -ItemType "directory" > $null
 New-Item -Path "$buildPath" -Force -Name "metadata" -ItemType "directory" > $null
 
 Copy-Item "$loupedeckYaml" -Force -Destination "$buildPath\metadata\$loupedeckYaml" > $null
+((Get-Content -Path "$buildPath\metadata\$loupedeckYaml" -Raw) -replace 'x.x.x', $version) | Set-Content "$buildPath\metadata\$loupedeckYaml"
+
 Copy-Item "$($project)Plugin\Resources\256.png" -Force -Destination "$buildPath\metadata\256.png" > $null
 Copy-Item "$dllPath\$dllName" -Force -Destination "$buildPath\bin\$dllName" > $null
 
