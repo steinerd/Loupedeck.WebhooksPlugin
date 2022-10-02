@@ -59,7 +59,7 @@ There are numerous ways to create them, or export them in many different applica
 
 An example HAR file for a fake IFTTT call can be found here: [example.har](example.har)
 
-__All HAR Files must be saved to `%userprofile%/.loupedeck/webhooks`__
+__All HAR Files must be saved to `%userprofile%/.loupedeck/webhooks` (Windows) -OR- `~/.loupedeck/webhooks` (Mac)__
 
 You can have multiple `*.har` files with multiple requests, or one `.har` with all the requests. The plugin will treat them the same. 
 
